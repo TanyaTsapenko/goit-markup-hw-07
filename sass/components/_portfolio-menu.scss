@@ -1,0 +1,45 @@
+.menu-box {
+  padding-top: 94px;
+}
+.menu__list {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding-left: 0px;
+}
+
+.menu__item {
+  margin-right: 8px;
+}
+
+.menu__item:last-child {
+  margin-right: 0px;
+}
+
+.menu__list .menu__button {
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+  @include transition(box-shadow);
+  font-family: "Roboto", sans-serif;
+  color: $black-text;
+  background-color: $booton;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  align-items: center;
+}
+.menu__button:hover,
+.menu__button:focus {
+  background-color: $blue-text;
+  color: $white-text;
+}
+.menu__list .menu__button:hover {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.menu__list .menu__button:focus {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
