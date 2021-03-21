@@ -36,10 +36,11 @@
 }
 .contact-footer__item:last-child {
   margin-left: 50px;
+  &:first-child {
+    margin: 0 auto;
+  }
 }
-.contact-footer__item:first-child {
-  margin: 0 auto;
-}
+
 .contact-footer__email {
   display: block;
   align-items: center;
@@ -54,16 +55,15 @@
   line-height: 16px;
   letter-spacing: 0.02em;
   @include transition(color);
-}
-.contact-footer__email:first-child {
-  margin-bottom: 9px;
-}
-
-.contact-footer__email:hover {
-  color: $blue-text;
-}
-.contact-footer__email:focus {
-  color: $blue-text;
+  &:focus {
+    color: $blue-text;
+  }
+  &:hover {
+    color: $blue-text;
+  }
+  &:first-child {
+    margin-bottom: 9px;
+  }
 }
 
 /*ICONS*/
@@ -73,7 +73,14 @@
 }
 .social__item {
   margin-right: 10px;
+  margin: 0px;
+  padding: 0px;
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
+
 .social__title {
   display: inline-block;
   margin-bottom: 20px;
@@ -102,26 +109,17 @@
   justify-content: center;
   align-items: center;
   @include transition(background-color);
-}
-.social__link:hover {
-  background-color: $blue-text;
-}
-.social__link:focus {
-  background-color: $blue-text;
+  &:focus {
+    background-color: $blue-text;
+  }
+  &:hover {
+    background-color: $blue-text;
+  }
 }
 
 .textsocial {
   display: block;
   margin: 0px;
-}
-
-.social-item {
-  margin: 0px;
-  padding: 0px;
-  margin-right: 10px;
-}
-.social-item:last-child {
-  margin-right: 0px;
 }
 
 .social-list__icon {
@@ -148,16 +146,17 @@
   border-radius: 50%;
   @include transition(fill);
   @include transition(background-color);
+  &:focus {
+    fill: $white-text;
+    background-color: $blue-text;
+    border-radius: 50%;
+  }
+  &:hover {
+    fill: $white-text;
+    background-color: $blue-text;
+  }
 }
-.social-list__link:hover {
-  fill: $white-text;
-  background-color: $blue-text;
-}
-.social-list__link:focus {
-  fill: $white-text;
-  background-color: $blue-text;
-  border-radius: 50%;
-}
+
 .social-list__item {
   margin: 0px;
   padding: 0px;

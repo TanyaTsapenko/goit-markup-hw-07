@@ -43,16 +43,16 @@
 .section-comand__profession {
   text-align: center;
   margin: 0 auto;
+  & {
+    color: $gray-text;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+    letter-spacing: 0.03em;
+    align-items: center;
+  }
 }
 
-.section-comand__profession {
-  color: $gray-text;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18.75px;
-  letter-spacing: 0.03em;
-  align-items: center;
-}
 .section-comand__worker {
   padding: 30px 20px;
 }
