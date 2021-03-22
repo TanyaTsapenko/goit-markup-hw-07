@@ -20,7 +20,7 @@
   border: none;
   padding: 6px 22px;
   @include transition(box-shadow);
-  font-family: "Roboto", sans-serif;
+  font-family: $Raleway-font;
   color: $black-text;
   background-color: $booton;
   font-weight: 500;

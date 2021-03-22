@@ -47,7 +47,7 @@
   .modal__title {
     margin: 0px;
     text-align: center;
-    font-family: "Roboto", sans-serif;
+    font-family: $Roboto-font;
     font-style: normal;
     font-weight: 700;
     color: $black-text;
@@ -62,7 +62,7 @@
     display: flex;
     flex-direction: column;
     text-align: start;
-    font-family: "Roboto", sans-serif;
+    font-family: $Roboto-font;
     font-weight: 400;
     font-style: normal;
     font-size: 12px;
@@ -129,7 +129,7 @@
   .check {
     display: flex;
     align-items: center;
-    font-family: "Roboto", sans-serif;
+    font-family: $Roboto-font;
     font-weight: 400;
     color: $gray-text;
     font-size: 14px;
