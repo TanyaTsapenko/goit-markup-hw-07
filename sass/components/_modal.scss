@@ -6,7 +6,7 @@
   width: 100%;
   height: 100%;
   background-color: $color-backdrop;
-  @include transition(opacity);
+  transition: opacity $timing-function;
   .modal {
     overflow: hidden;
     position: absolute;
@@ -53,7 +53,6 @@
     color: $black-text;
     font-size: 20px;
     line-height: 23.44px;
-    letter-spacing: 0.03em;
   }
   .form-modal__name {
     position: relative;
@@ -76,7 +75,7 @@
     width: 448px;
     height: 40px;
     border: 1px solid $border-form-input;
-    @include transition(border);
+    transition: border $timing-function;
     border-radius: 4px;
     cursor: pointer;
   }
@@ -113,7 +112,7 @@
     height: 120px;
     resize: none;
     border: 1px solid $border-form-input;
-    @include transition(border);
+    transition: border $timing-function;
     border-radius: 4px;
     cursor: text;
     &:focus {
@@ -184,7 +183,7 @@
     color: $white-text;
     background-color: $blue-text;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    @include transition(box-shadow);
+    transition: box-shadow $timing-function;
     border-radius: 4px;
     cursor: pointer;
   }

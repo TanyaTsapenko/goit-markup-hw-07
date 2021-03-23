@@ -32,7 +32,7 @@
     line-height: 16px;
     letter-spacing: 0.02em;
     position: relative;
-    @include transition(color);
+    transition: color $timing-function;
     &:hover,
     &:focus,
     &:active {
@@ -56,7 +56,7 @@
     left: 0;
     bottom: 0;
     opacity: 0;
-    @include transition(opacity);
+    transition: opacity $timing-function;
   }
   .site-nav__link:hover::after {
     opacity: 1;
@@ -87,7 +87,7 @@
     padding: 0px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    @include transition(color);
+    transition: color $timing-function;
     &:focus {
       color: $blue-text;
     }
